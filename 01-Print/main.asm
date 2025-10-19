@@ -8,6 +8,7 @@ print:
   ld hl, [wTileMap]
   call vblank
   ld (hl), $7c
+  ret
 
 .loop:
   call print
